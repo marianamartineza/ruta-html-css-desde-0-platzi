@@ -10,12 +10,29 @@
         .container{
             display: flex;
             background: papayawhip;
-            justify-content: space-between;
+
+            /* espacio en medio de los hijos */
+            /* justify-content: space-between; */
+
+            /* centrar eje horizontal*/
+            justify-content: center;
+
+            /* centrar eje vertical */
+            align-items: center;
+
+            height: 702px;
+
+            /* direccion del flex row por defecto*/
+            flex-direction: column;
         }
         .item{
             width: 30px;
             height: 30px;
             background: purple;
+        }
+        /* hijos impares */
+        .container .item:nth-child(2n+1){
+            background: cyan;
         }
 
     </style>
