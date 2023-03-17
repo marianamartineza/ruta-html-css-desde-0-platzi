@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 300px;
+            height: 300px;
+            background: papayawhip;
+            border-radius: 20px; 
+            /* hidden - ocultar lo que se salga */
+            overflow: hidden;
+        }
+        .card img{
+            width: 100%;
+        }
+        .card p{
+            text-align: center;
+        }
+        /* no cuenta los p si no todo los elementos hijos dentro de la card */
+        .card p:nth-child(3){
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+   <section>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=400" alt="kitten">
+            <p>Cute Kitten</p>
+            <p>Lovely</p>
+        </div>
+   </section> 
+</body>
+</html>
